@@ -6,15 +6,17 @@ $factory->define(App\Models\Category::class, function (Faker $faker) {
     return [
         'name' => $faker->unique()->randomElements(
             [
-                'Lifestyle',
-                'Running',
-                'Gym & Training',
-                'Soccer',
-                'Tennis',
-                'Basketball',
-                'Football',
-                'Skateboarding',
-                'Sandals',
+                'Giày thể thao/Sneaker nữ',
+                'Giày cao gót',
+                'Giày đế xuồng',
+                'Bốt',
+                'Sandals nữ',
+                'Guốc,Dép',
+                'Giày thể thao/Sneaker nam',
+                'Giày lười',
+                'Giày tây',
+                'Sandals nam',
+                'Dép nam',
             ]
         )[0],
         'description' => $faker->text($maxNbChars = 200),

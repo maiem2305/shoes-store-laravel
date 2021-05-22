@@ -52,10 +52,10 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{ route('category.create') }}"><i
                             class="fas fa-filter"></i>{{ trans('layouts.category') }}</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="{{ route('review.index') }}"><i class="fas fa-star"></i>{{ trans('layouts.review') }}</a>
                 </li>
@@ -139,11 +139,6 @@
                 <div class="container">
                     <div class="py-4 border-top">
                         <div class="row">
-                            <div class="col text-left">
-                                <p class="m-0">
-                                    {{ trans('layouts.copyright') }}
-                                </p>
-                            </div>
                             <div class="col text-right">
                                 <p class="m-0">
                                     <a href="#">{{ trans('layouts.back_to_top') }}</a>

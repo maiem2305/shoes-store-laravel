@@ -14,6 +14,7 @@ return [
     'home' => 'Trang Chủ',
     'men' => 'Nam',
     'women' => 'Nữ',
+    'product' => 'Sản phẩm',
     'login' => 'Đăng nhập',
     'cart' => 'Giỏ hàng',
     'profile' => 'Tài khoản của tôi',

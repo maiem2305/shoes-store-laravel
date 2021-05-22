@@ -11,10 +11,10 @@ return [
     |
     */
 
-    'branch' => 'Nike Fake Website',
+    'branch' => 'MaiShoes',
     'new' => 'Mới ra mắt',
     'empty' => 'Không có mặt hàng nào.',
-    'category_shoes' => "Giày :name",
+    'category_shoes' => ":name",
     'men' => 'Danh mục nam',
     'women' => 'Danh mục nữ',
     'sort' => 'Sắp xếp',

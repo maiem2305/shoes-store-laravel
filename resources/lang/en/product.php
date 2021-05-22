@@ -10,7 +10,8 @@ return [
     | Include all view in folder product.
     |
     */
-
+    'price_inc' => 'Price: Low đến High',
+    'price_dec' => 'Price: High đến Low',
     'new_title' => 'New product',
     'edit_title' => 'Edit product',
     'list_title' => 'List products',

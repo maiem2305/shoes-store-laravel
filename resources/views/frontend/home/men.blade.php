@@ -7,7 +7,7 @@
     <div class="col-lg-3">
         <h3 class="title mt-5 mb-4">{{ trans('home.men') }}</h3>
         <div class="list-group list-group-flush">
-            @foreach ($categories as $category)
+            @foreach ($categories = App\Models\Category::where('id','<',6)->get() as $category)
             <a href="{{ route('category.men', $category->id) }}"
                 class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
                 {{ $category->name }}
@@ -29,9 +29,9 @@
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
                         <button class="dropdown-item decreaseAscending" type="button">{{ trans('home.price') }}:
-                            $$-$</button>
+                           {{ trans('product.price_dec')}}</button>
                         <button class="dropdown-item priceAscending" type="button">{{ trans('home.price') }}:
-                            $-$$</button>
+                            {{ trans('product.price_inc')}}</button>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
     <div class="col-lg-3">
         <h3 class="title mt-5 mb-4">{{ trans('home.women') }}</h3>
         <div class="list-group list-group-flush">
-            @foreach ($categories as $category)
+            @foreach ($categories = App\Models\Category::where('id','>',5)->get() as $category)
             <a href="{{ route('category.women', $category->id) }}"
                 class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
                 {{ $category->name }}

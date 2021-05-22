@@ -11,12 +11,12 @@ class AdminsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Models\Admin::class, 3)->create();
+        factory(App\Models\Admin::class, 2)->create();
 
         App\Models\Admin::find(1)->update([
-            'name' => 'Administrator',
-            'email' => 'admin@shoesstore.com',
-            'password' => 'secret',
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
+            'password' => '23051998',
         ]);
     }
 }

@@ -2,7 +2,8 @@
 <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo">
+            <!-- <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo"> -->
+            MaiShoe
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +23,7 @@
                         {{ trans('layouts.men') }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        @foreach ($categories = App\Models\Category::all()->sortBy('name') as $category)
+                        @foreach ($categories = App\Models\Category::where('id','<',6)->get() as $category)
                         <a class="dropdown-item" href="{{ route('category.men', $category->id) }}">
                             {{ $category->name }}
                         </a>
@@ -35,7 +36,7 @@
                         {{ trans('layouts.women') }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        @foreach ($categories as $category)
+                        @foreach ($categories = App\Models\Category::where('id','>',5)->get() as $category)
                         <a class="dropdown-item" href="{{ route('category.women', $category->id) }}">
                             {{ $category->name }}
                         </a>

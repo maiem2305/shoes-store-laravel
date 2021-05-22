@@ -72,9 +72,11 @@ class CartController extends Controller
      */
     public function checkout()
     {
+        
         if ($this->cartRepository->checkout()) {
             return redirect()->route('order')->with('status', trans('messages.paymented'));
         }
+        //  \Mail::to('anh980523@gmail.com')->send(new \App\Mail\OrderShipped($order));
 
         return back()->withErrors(trans('cart.profile_error'));
     }

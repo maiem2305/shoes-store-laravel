@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'branch' => 'Nike Fake Website',
+    'branch' => 'MaiShoes',
     'new' => 'New arrivals',
     'empty' => 'There is no item.',
     'category_shoes' => ":name Shoes",

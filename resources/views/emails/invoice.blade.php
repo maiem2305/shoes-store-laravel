@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Invoice of the order #{{ $order->id }}</title>
+    <title>Hóa đơn của đơn đặt hàng #{{ $order->id }}</title>
     <style>
         /*!
         * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -11161,36 +11161,34 @@
             <div class="col-md-10 bg-white rounded shadow py-4">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Thank you for your order</p>
+                        <p>Cảm ơn bạn đã đặt hàng của bạn</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Your order has been received and is currently being processed. Your order details are shown
-                            below
-                            for your reference:</p>
+                        <p>Đơn đặt hàng của bạn đã được nhận và hiện đang được xử lý. Chi tiết đơn đặt hàng của bạn được hiển thị phía dưới cho bạn tham khảo:</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="float-left">Order #{{ $order->id }}</h4>
-                        <h4 class="float-right">Total ${{ $order->total }}</h4>
+                        <h4 class="float-left">Đơn hàng #{{ $order->id }}</h4>
+                        <h4 class="float-right">Tổng ${{ $order->total }}</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="float-left">Created at {{ $order->created_at }}</p>
+                        <p class="float-left">Ngày đặt {{ $order->created_at }}</p>
                     </div>
                 </div>
                 <table class="table table-bordered text-center">
                     <thead>
                         <tr>
-                            <th scope="col">Items</th>
+                            <th scope="col">Mặt hàng</th>
                             <th scope="col">Size</th>
-                            <th scope="col">Color</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Total</th>
+                            <th scope="col">Màu sắc</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Tổng</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -11212,7 +11210,7 @@
                 <table class="table">
                     <tbody>
                         <tr>
-                            <th scope="row">Name</th>
+                            <th scope="row">Tên</th>
                             <td class="text-right">{{ $profile->full_name }}</td>
                         </tr>
                         <tr>
@@ -11220,11 +11218,11 @@
                             <td class="text-right">{{ $user->email }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Phone</th>
+                            <th scope="row">Số điện thoại</th>
                             <td class="text-right">{{ $profile->phone }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Address</th>
+                            <th scope="row">Địa chỉ</th>
                             <td class="text-right">{{ $profile->address }}</td>
                         </tr>
                     </tbody>

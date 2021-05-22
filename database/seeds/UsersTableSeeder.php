@@ -17,8 +17,8 @@ class UsersTableSeeder extends Seeder
         });
 
         User::find(1)->update([
-            'email' => 'user@shoesstore.com',
-            'password' => 'secret',
+            'email' => 'anh980523@gmail.com',
+            'password' => '23051998',
             'status' => User::ACTIVE,
         ]);
     }

@@ -10,7 +10,8 @@ return [
     | Include all view in folder product.
     |
     */
-
+    'price_inc' => 'Thấp đến Cao',
+    'price_dec' => 'Cao đến Thấp',
     'new_title' => 'Sản phẩm mới',
     'edit_title' => 'Chỉnh sửa sản phẩm',
     'list_title' => 'Danh sách sản phẩm',
