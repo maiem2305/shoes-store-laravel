@@ -36,12 +36,12 @@
                         </td>
                         <td>{{ $item->options->size }}</td>
                         <td>{{ $item->options->color }}</td>
-                        <td>${{ $item->price }}</td>
+                        <td>{{ $item->price }}đ</td>
                         <td>
                             {{ Form::hidden('rowId', $item->rowId, ['id' => 'rowId' . $item->id]) }}
-                            {{ Form::number('qty', $item->qty, ['class' => 'form-control form-control-sm text-center w-50 mx-auto', 'min' => '1', 'max' => '10', 'id' => 'qty' . $item->id]) }}
+                            {{ Form::number('qty', $item->qty, ['class' => 'form-control form-control-sm text-center w-50 mx-auto', 'min' => '1', 'id' => 'qty' . $item->id]) }}
                         </td>
-                        <td>${{ ($item->price) * ($item->qty) }}</td>
+                        <td>{{ ($item->price) * ($item->qty) }}đ</td>
                         <td>
                             <a id="remove{{ $item->id }}" href="#"><i class="fas fa-times"></i></a>
                         </td>
@@ -100,7 +100,7 @@
                     </tr>
                     <tr>
                         <th scope="row">{{ trans('cart.total') }}</th>
-                        <td class="text-right">${{ Cart::total() }}</td>
+                        <td class="text-right">{{ Cart::total() }}đ</td>
                     </tr>
                     <tr>
                         <th scope="row">{{ trans('cart.payment_method') }}</th>

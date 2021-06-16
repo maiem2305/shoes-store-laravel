@@ -58,7 +58,7 @@ return [
     'closed' => 'Closed',
     'work_all_holiday' => 'We work all the holidays',
     'follow_on_social' => 'Follow us on social',
-    'slogan' => 'Inspiring the world\'s athletes, Nike delivers innovative products, experiences and services.',
+    'slogan' => 'MaiShoes is a website specializing in providing mens and womens footwear products with many different designs and sizes. Create comfort, comfort with the feet',
     'free_shipping' => 'Free shipping',
     'cash_on_delivery' => 'Cash on delivery',
     'days_return' => 'Days return',

@@ -59,7 +59,7 @@ return [
     'closed' => 'Đóng cửa',
     'work_all_holiday' => 'Chúng tôi làm việc tất cả ngày lễ',
     'follow_on_social' => 'Theo dõi chúng tôi trên mạng xã hội',
-    'slogan' => 'Truyền cảm hứng cho các vận động viên trên thế giới, Nike cung cấp các sản phẩm, trải nghiệm và dịch vụ sáng tạo.',
+    'slogan' => 'MaiShoes là website chuyên cung cấp các sản phẩm giày dép nam, nữ với nhiều kiểu dáng, kích thước khác nhau. Tạo nên sự thoải mái, dễ chịu đến với những đôi bàn chân.',
     'free_shipping' => 'Miễn phí giao hàng',
     'cash_on_delivery' => 'Thanh toán khi nhận hàng',
     'days_return' => 'ngày hoàn trả',

@@ -71,6 +71,7 @@ class ProductController extends Controller
      */
     public function store(ProductStoreRequest $request)
     {
+        // dd($_FILES);
         $product = $request->only('name', 'description', 'gender', 'price', 'category_id');
         $product = $this->productRepository->uploadImage($request, $product);
 

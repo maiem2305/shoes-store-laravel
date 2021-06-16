@@ -29,9 +29,9 @@
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
                         <button class="dropdown-item decreaseAscending" type="button">{{ trans('home.price') }}:
-                            $$-$</button>
+                            {{ trans('product.price_dec')}}</button>
                         <button class="dropdown-item priceAscending" type="button">{{ trans('home.price') }}:
-                            $-$$</button>
+                            {{ trans('product.price_inc')}}</button>
                     </div>
                 </div>
             </div>

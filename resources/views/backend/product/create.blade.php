@@ -49,6 +49,7 @@
                 <div class="form-group">
                     <label>{{ trans('product.image') }}</label>
                     {{ Form::file('image[]', ['class' => 'form-control-file', 'multiple']) }}
+                    <!-- {{ Form::file('image', ['class' => 'form-control-file']) }} -->
                 </div>
                 <div class="form-group">
                     {{ Form::submit(trans('product.create'), ['class' => 'btn btn-primary']) }}

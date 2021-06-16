@@ -70,10 +70,10 @@
                     <h4><span>@lang('layouts.about_us')</span></h4>
                     <ul class="list-unstyled">
                         <li><a href="#">@lang('layouts.about_us')</a></li>
-                        <li><a href="#">@lang('layouts.shopping_guide')</a></li>
-                        <li><a href="#">@lang('layouts.delivery_info')</a></li>
-                        <li><a href="#">@lang('layouts.privacy_policy')</a></li>
-                        <li><a href="#">@lang('layouts.our_store')</a></li>
+                        <li><a href="/policy">@lang('layouts.shopping_guide')</a></li>
+                        <li><a href="/policy">@lang('layouts.delivery_info')</a></li>
+                        <li><a href="/policy">@lang('layouts.privacy_policy')</a></li>
+                        <li><a href="/policy">@lang('layouts.our_store')</a></li>
                     </ul>
                 </div>
             </div>

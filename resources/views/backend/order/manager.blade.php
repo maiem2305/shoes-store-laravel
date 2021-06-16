@@ -63,7 +63,7 @@
                                 <th scope="row">{{ $order->id }}</th>
                                 <td>{{ $order->user->email }}</td>
                                 <td>{{ $order->quantity }}</td>
-                                <td>${{ $order->total }}</td>
+                                <td>{{ $order->total }}đ</td>
                                 <td>{{ $order->created_at }}</td>
                                 <td>{{ $order->status }}</td>
                                 <td>

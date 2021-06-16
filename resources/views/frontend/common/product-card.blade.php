@@ -14,6 +14,8 @@
             <img class="card-img-top img-front" src="{{ asset($product->image[0]) }}" alt="{{ $product->name }}">
             <img class="card-img-top img-back" src="{{ asset($product->image[0]) }}" alt="{{ $product->name }}">
             @endif
+
+
         </a>
         <div class="card-body px-0">
             <div class="mb-2">
@@ -25,7 +27,7 @@
             </div>
             <h5 class="card-text"><a
                     href="{{ route('product.show', $product->id) }}">{{ $product->name }}</a></h5>
-            <h5 class="card-text text-muted price">${{ $product->price }}</h5>
+            <h5 class="card-text text-muted price">{{ $product->price }}đ</h5>
         </div>
     </div>
 </div>

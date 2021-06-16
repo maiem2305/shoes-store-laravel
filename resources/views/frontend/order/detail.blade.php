@@ -24,7 +24,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="card-title float-left">{{ trans('order.order') }} #{{ $orderDetail->id }}</h3>
-                            <h3 class="card-title float-right">{{ trans('order.total') }} ${{ $orderDetail->total }}
+                            <h3 class="card-title float-right">{{ trans('order.total') }} {{ $orderDetail->total }}đ
                             </h3>
                         </div>
                     </div>
@@ -97,9 +97,9 @@
                                 </td>
                                 <td>{{ $orderProduct->pivot->size }}</td>
                                 <td>{{ $orderProduct->pivot->color }}</td>
-                                <td>${{ $orderProduct->pivot->price }}</td>
+                                <td>{{ $orderProduct->pivot->price }}đ</td>
                                 <td>{{ $orderProduct->pivot->qty }}</td>
-                                <td>${{ $orderProduct->pivot->total }}</td>
+                                <td>{{ $orderProduct->pivot->total }}đ</td>
                             </tr>
                             @endforeach
                         </tbody>

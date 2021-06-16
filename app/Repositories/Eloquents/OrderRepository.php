@@ -44,7 +44,7 @@ class OrderRepository extends BaseRepository implements OrderRepositoryInterface
 
     public function cancelOrder($id)
     {
-        return $this->model()->where('id', $id)->where('status', Order::TEXT[Order::PENDING])->update(['status' => Order::CANCELED]);
+        return $this->model()->where('id', $id)->where('status', Order::PENDING)->update(['status' => Order::CANCELED]);
     }
 
     public function deleteOrder($id)

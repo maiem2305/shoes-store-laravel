@@ -46,7 +46,7 @@
             {{ trans('product.category_' . $productSelected->gender, ['category' => $categorySelected->name]) }}
         </p>
         <h3 class="my-2 text-uppercase text-primary">{{ $productSelected->name }}</h3>
-        <h3 class="my-4">$<b>{{ $productSelected->price }}</b></h3>
+        <h3 class="my-4"><b>{{ $productSelected->price }}</b>đ</h3>
         {{ Form::open(['class' => 'form-horizontal']) }}
         <div class="form-group row">
             <label class="col-md-6 col-form-label text-uppercase">
@@ -81,12 +81,16 @@
                 <b>{{ trans('product.quantity') }}</b>
             </label>
             <div class="col-md-6">
-                <select class="form-control" name="qty" id="qty">
+                <!-- <select class="form-control" name="qty" id="qty">
                     @for ($i = 1; $i<=10; $i++) <option value="{{ $i }}">
                         {{ $i }}
                         </option>
                         @endfor
-                </select>
+                </select> -->
+
+                <div class="quantity-input">
+                    <input type="number" value="1" class="form-control" name="qty" id="qty" min=1>
+                </div>
             </div>
         </div>
         <div class="form-group row mb-0">
@@ -129,7 +133,7 @@
             <div class="card-body px-0">
                 <h5 class="card-text"> <a href="{{ route('product.show', $product->id) }}">{{ $product->name }}</a>
                 </h5>
-                <h5 class="card-text text-muted">${{ $product->price }}</h5>
+                <h5 class="card-text text-muted">{{ $product->price }}đ</h5>
             </div>
         </div>
     </div>
@@ -272,10 +276,14 @@
                     productId: jQuery('#productId').val(),
                 },
                 success: function () {
+                    alert('Add to card');
                     $("#cart-qty").html(text + ' ' + (cart += qty));
                 },
+                error: function () {
+                    alert('Something went wrong!');
+                }
             });
-        });
+        });s
     });
 </script>
 <!-- Review -->

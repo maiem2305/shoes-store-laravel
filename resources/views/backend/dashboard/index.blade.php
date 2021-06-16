@@ -37,7 +37,7 @@
     <div class="card">
         <div class="card-body">
             <p class="card-text">{{ trans('dashboard.profit') }}</p>
-            <h3 class="card-title">${{ $orders['profit'] }}</h3>
+            <h3 class="card-title">{{ $orders['profit'] }}đ</h3>
             <a class="card-link" href="{{ route('order.manager') }}">{{ trans('dashboard.view') }}</a>
         </div>
     </div>

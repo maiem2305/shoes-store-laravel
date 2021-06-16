@@ -28,8 +28,8 @@ class ProductStoreRequest extends FormRequest
             'description' => 'required',
             'gender' => 'required|boolean',
             'price' => 'required',
-            'image' => 'required|max:5',
-            'image.*' => 'image|mimes:jpeg,png,jpg|max:2048',
+            // 'image' => 'required|max:5',
+            // 'image' =>'image|mimes:jpeg,png,jpg|max:2048',
             'color' => 'required',
             'size' => 'required',
         ];

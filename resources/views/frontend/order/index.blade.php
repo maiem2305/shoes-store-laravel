@@ -47,7 +47,7 @@
                                     </a>
                                 </td>
                                 <td>{{ $orderProduct->pivot->qty }}</td>
-                                <td>${{ $orderProduct->pivot->total }}</td>
+                                <td>{{ $orderProduct->pivot->total }}đ</td>
                                 <td><a href="{{ route('order.detail', $orderProduct->pivot->order_id) }}"
                                         class="btn btn-outline-info btn-sm">{{ trans('order.detail') }}</a></td>
                             </tr>
@@ -92,7 +92,7 @@
                                     @endif
                                 </td>
                                 <td>{{ $order->quantity }}</td>
-                                <td>${{ $order->total }}</td>
+                                <td>{{ $order->total }}đ</td>
                                 <td class="text-capitalize">{{ $order->status }}</td>
                                 <td><a href="{{ route('order.detail', $order->id) }}"
                                         class="btn btn-outline-info btn-sm">{{ trans('order.detail') }}</a></td>
