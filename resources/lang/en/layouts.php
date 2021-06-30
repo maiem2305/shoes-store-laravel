@@ -63,5 +63,6 @@ return [
     'cash_on_delivery' => 'Cash on delivery',
     'days_return' => 'Days return',
     'open_all_week' => 'Opening all week',
+    'contact' => 'Contact',
 
 ];

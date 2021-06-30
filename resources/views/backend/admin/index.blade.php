@@ -17,7 +17,7 @@
                 <table id="table" class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">{{ trans('admin.id') }}</th>
+                            <!-- <th scope="col">{{ trans('admin.id') }}</th> -->
                             <th scope="col">{{ trans('admin.name') }}</th>
                             <th scope="col">{{ trans('admin.email') }}</th>
                             <th scope="col">{{ trans('admin.joined') }}</th>
@@ -26,7 +26,7 @@
                     <tbody>
                         @foreach ($admins as $admin)
                         <tr>
-                            <th scope="row">{{ $admin->id }}</th>
+                            <!-- <th scope="row">{{ $admin->id }}</th> -->
                             <td>{{ $admin->name }}</td>
                             <td>{{ $admin->email }}</td>
                             <td>{{ $admin->created_at }}</td>

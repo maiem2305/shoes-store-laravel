@@ -17,7 +17,7 @@
                 <table id="table" class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">{{ trans('review.id') }}</th>
+                            <!-- <th scope="col">{{ trans('review.id') }}</th> -->
                             <th scope="col">{{ trans('review.rating') }}</th>
                             <th scope="col">{{ trans('review.product_id') }}</th>
                             <th scope="col">{{ trans('review.user_id') }}</th>
@@ -29,7 +29,7 @@
                     <tbody>
                         @foreach ($reviews as $review)
                         <tr>
-                            <th scope="row">{{ $review->id }}</th>
+                            <!-- <th scope="row">{{ $review->id }}</th> -->
                             <td>{{ $review->rating }}</td>
                             <td>{{ $review->product_id }}</td>
                             <td>{{ $review->user_id }}</td>

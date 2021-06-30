@@ -19,7 +19,7 @@
                 <table id="table" class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">{{ trans('size.id') }}</th>
+                            <!-- <th scope="col">{{ trans('size.id') }}</th> -->
                             <th scope="col">{{ trans('size.name') }}</th>
                             <th scope="col">{{ trans('size.action') }}</th>
                         </tr>
@@ -27,7 +27,7 @@
                     <tbody id="myTable">
                         @foreach ($sizes as $size)
                         <tr>
-                            <th scope="row">{{ $size->id }}</th>
+                            <!-- <th scope="row">{{ $size->id }}</th> -->
                             <td>{{ $size->name }}</td>
                             <td>
                                 {{ Form::open(['method' => 'DELETE', 'route' => ['size.destroy', $size->id]]) }}

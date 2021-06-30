@@ -100,6 +100,13 @@
                     {{ trans('product.add') }}
                 </button>
             </div>
+             <div class="col-md-12">
+                <button type="button" class="btn btn-primary" id="wishlist">
+                    <span>favorite</span>
+                    <span><i class="far fa-heart"></i></span>
+                </button>
+            </div>
+
         </div>
         {{ Form::close() }}
         <div class="my-4">
@@ -140,7 +147,7 @@
     @endforeach
 </div>
 <div class="row">
-    <p class="col-md-12 text-center text-uppercase my-2" data-aos="zoom-in">
+    <p class="col-md-12 text-center text-uppercase my-2">
         <a
             href="{{ route('category.' . $productSelected->gender, $productSelected->category_id) }}">{{ trans('product.more') }}</a>
     </p>
@@ -244,9 +251,9 @@
 </div>
 
 <!-- Category Description -->
-<div class="row mt-5 mb-4" data-aos="zoom-in">
+<div class="row mt-5 mb-4">
     <div class="col-md-8 offset-md-2 text-center">
-        <h3 class="title">{{ $categorySelected->name }}</h3>
+        <h3 class="title" data-aos="zoom-in">{{ $categorySelected->name }}</h3>
         <p class="lead">{{ $categorySelected->description }}</p>
     </div>
 </div>

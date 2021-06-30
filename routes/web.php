@@ -103,6 +103,9 @@ Route::group(['middleware' => 'locale'], function () {
         // Profile
         Route::resource('profile', 'ProfileController', ['only' => ['update']]);
 
+        //Wishlist
+         Route::get('/wishlist', 'WishlistController@index')->name('wishlist');
+
         // Comment
         Route::resource('/comment', 'CommentController');
 
@@ -133,6 +136,12 @@ Route::group(['middleware' => 'locale'], function () {
     Route::get('/policy', function () {
         return view('frontend.policy.index');
     })->name('policy');
+
+    // Contact
+    Route::get('/contact', function () {
+        return view('frontend.contact.index');
+    })->name('contact');
+
 
     //Product
     Route::resource('/product', 'ProductController', ['only' => 'show']);

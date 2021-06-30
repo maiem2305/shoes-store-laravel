@@ -3,7 +3,7 @@
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             <!-- <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo"> -->
-            MaiShoe
+            MaiShoes
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,11 @@
                         {{ trans('layouts.policy') }}
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contact') }}">
+                        {{ trans('layouts.contact') }}
+                    </a>
+                </li>
             </ul>
 
             <!-- Right -->
@@ -97,11 +102,14 @@
                 <li class="dropdown nav-item">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->email }}
+                        {{ Auth::user()->profile->full_name}}
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('user.edit', Auth::user()->id) }}">
                             {{ trans('layouts.profile') }}
+                        </a>
+                          <a class="dropdown-item" href="{{ route('wishlist') }}">
+                            {{ trans('wishlist.wishlist') }}
                         </a>
                         <a class="dropdown-item" href="{{ route('order') }}">
                             {{ trans('layouts.my_order') }}

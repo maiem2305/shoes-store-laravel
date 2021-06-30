@@ -39,6 +39,8 @@ return [
     'image' => 'Hình ảnh',
     'payment_method' => 'Phương thức thanh toán',
     'payment_on_delivery' => 'Thanh toán khi giao hàng',
-    'profile_error' => 'Điền thông tin của bạn trước khi thanh toán.'
+    'profile_error' => 'Điền thông tin của bạn trước khi thanh toán.',
+    'wishlish' => 'Yêu thích',
+    'add to cart' => 'Thêm vào giỏ hàng'
 
 ];

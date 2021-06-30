@@ -12,21 +12,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/storage/cover/banner3.jpg" class="d-block w-100" alt="..." width="100%" height="500px">
+                <img src="/storage/cover/banner1.png" class="d-block w-100" alt="..." width="100%" height="550px">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 data-aos="fade-left"></h1>
                     <p data-aos="fade-right"></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/storage/cover/bannner1.jpg" class="d-block w-100" alt="..." width="100%" height="500px">
+                <img src="/storage/cover/banner2.jpg" class="d-block w-100" alt="..." width="100%" height="550px">
                 <div class="carousel-caption d-none d-md-block text-left text-dark">
                     <h1></h1>
                     <p></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/storage/cover/banner2.jpg" class="d-block w-100" alt="..." width="100%" height="500px">
+                <img src="/storage/cover/banner3.jpg" class="d-block w-100" alt="..." width="100%" height="550px">
                 <div class="carousel-caption d-none d-md-block">
                     <h1></h1>
                     <p></p>
@@ -83,22 +83,22 @@
     </div>
 </div>
 
-<!-- <div class="banner row mt-4">
+<div class="banner row mt-4">
     <div class="col-md-6" data-aos="fade-right">
-        <div class="banner_item align-items-center" style="background-image:url(storage/cover/banner_women.jpg)">
+        <div class="banner_item align-items-center" style="background-image:url(storage/cover/banner_nu.jpg)">
             <div class="banner_category">
-                <a href="{{ route('category.women', 1) }}" class="title">@lang('layouts.women')</a>
+                <a href="{{ route('category.women',6) }}" class="title">@lang('layouts.women')</a>
             </div>
         </div>
     </div>
     <div class="col-md-6" data-aos="fade-left">
-        <div class="banner_item align-items-center" style="background-image:url(storage/cover/banner_men.jpg)">
+        <div class="banner_item align-items-center" style="background-image:url(storage/cover/banner_nam.jpg)">
             <div class="banner_category">
                 <a href="{{ route('category.men', 1) }}" class="title">@lang('layouts.men')</a>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <div class="new-arrivals mt-5" data-aos="fade-up">
     <h2 class="text-center py-4 m-0 title" data-aos="zoom-in">{{ trans('home.new') }}</h2>

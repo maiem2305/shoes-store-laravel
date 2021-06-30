@@ -18,7 +18,7 @@
                     {{ Form::textarea('description', '', ['class' => 'form-control', 'rows' => '1']) }}
                 </div>
                 <div class="form-group">
-                    <label>{{ trans('product.gender') }}</label>
+                    <label>{{ trans('product.category') }}</label>
                     <select class="form-control" name="gender">
                         <option value="0">{{ trans('product.male') }}</option>
                         <option value="1">{{ trans('product.female') }}</option>

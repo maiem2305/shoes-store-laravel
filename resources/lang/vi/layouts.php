@@ -64,5 +64,6 @@ return [
     'cash_on_delivery' => 'Thanh toán khi nhận hàng',
     'days_return' => 'ngày hoàn trả',
     'open_all_week' => 'Mở cửa cả tuần',
+    'contact' => 'Liên hệ',
 
 ];

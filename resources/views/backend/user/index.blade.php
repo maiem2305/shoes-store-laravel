@@ -17,7 +17,7 @@
                 <table id="table" class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">{{ trans('user.id') }}</th>
+                            <!-- <th scope="col">{{ trans('user.id') }}</th> -->
                             <th scope="col">{{ trans('user.email') }}</th>
                             <th scope="col">{{ trans('user.name') }}</th>
                             <th scope="col">{{ trans('user.gender') }}</th>
@@ -30,7 +30,7 @@
                     <tbody>
                         @foreach ($users as $user)
                         <tr>
-                            <th scope="row">{{ $user->id }}</th>
+                            <!-- <th scope="row">{{ $user->id }}</th> -->
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->profile->full_name }}</td>
                             <td>{{ $user->profile->gender }}</td>

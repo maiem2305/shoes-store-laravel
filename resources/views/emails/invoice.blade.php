@@ -11172,7 +11172,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h4 class="float-left">Đơn hàng #{{ $order->id }}</h4>
-                        <h4 class="float-right">Tổng ${{ $order->total }}</h4>
+                        <h4 class="float-right">Tổng {{ $order->total }}đ</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -11199,9 +11199,9 @@
                             </td>
                             <td>{{ $orderProduct->pivot->size }}</td>
                             <td>{{ $orderProduct->pivot->color }}</td>
-                            <td>${{ $orderProduct->pivot->price }}</td>
+                            <td>{{ $orderProduct->pivot->price }}đ</td>
                             <td>{{ $orderProduct->pivot->qty }}</td>
-                            <td>${{ $orderProduct->pivot->total }}</td>
+                            <td>{{ $orderProduct->pivot->total }}đ</td>
                         </tr>
                         @endforeach
                     </tbody>

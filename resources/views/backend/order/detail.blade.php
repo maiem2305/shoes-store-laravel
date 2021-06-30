@@ -9,14 +9,14 @@
             <div class="row">
                 <div class="col-md-3">
                     <h3 class="card-title">{{ trans('order.' . $orderDetail->status) }} ({{ $orders->count() }})</h3>
-                    <div class="list-group list-group-flush">
+                    <!-- <div class="list-group list-group-flush">
                         @foreach ($orders as $order)
                         <a href="{{ route('order.detail.' . $orderDetail->status, $order->id) }}"
                             class="list-group-item list-group-item-action">
                             {{ $order->created_at }} - {{ trans('order.order') }} {{ $order->id }}
                         </a>
                         @endforeach
-                    </div>
+                    </div> -->
                     <a href="{{ route('order.manager') }}"
                         class="btn btn-outline-primary btn-block mt-4">{{ trans('order.view_more') }}</a>
                 </div>
@@ -66,10 +66,10 @@
                     </table>
                     <table class="table">
                         <tbody>
-                            <tr>
+                            <!-- <tr>
                                 <th scope="row">{{ trans('order.user_id') }}</th>
                                 <td class="text-right">{{ $orderDetail->user->id }}</td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <th scope="row">{{ trans('order.name') }}</th>
                                 <td class="text-right">{{ $orderDetail->user->profile->full_name }}</td>

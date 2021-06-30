@@ -22,7 +22,7 @@
                     <table class="table table-bordered text-center">
                         <thead>
                             <tr>
-                                <th scope="col">{{ trans('order.id') }}</th>
+                                <!-- <th scope="col">{{ trans('order.id') }}</th> -->
                                 <th scope="col">{{ trans('order.image') }}</th>
                                 <th scope="col">{{ trans('order.product') }}</th>
                                 <th scope="col">{{ trans('order.quantity') }}</th>
@@ -33,11 +33,11 @@
                         <tbody>
                             @foreach ($orderDetail->products as $orderProduct)
                             <tr>
-                                <td>
+                                <!-- <td>
                                     <a href="{{ route('order.detail', $orderProduct->pivot->order_id) }}">
                                         {{ $orderProduct->pivot->order_id }}
                                     </a>
-                                </td>
+                                </td> -->
                                 <td>
                                     <img src="{{ asset($orderProduct->image[0]) }}" width="50" height="50" alt="Image">
                                 </td>
@@ -69,7 +69,7 @@
                     <table id="table" class="table table-hover table-bordered text-center">
                         <thead>
                             <tr>
-                                <th scope="col">{{ trans('order.id') }}</th>
+                                <!-- <th scope="col">{{ trans('order.id') }}</th> -->
                                 <th scope="col">{{ trans('order.created') }}</th>
                                 <th scope="col">{{ trans('order.product') }}</th>
                                 <th scope="col">{{ trans('order.quantity') }}</th>
@@ -81,7 +81,7 @@
                         <tbody>
                             @foreach ($orders as $order)
                             <tr>
-                                <th><a href="{{ route('order.detail', $order->id) }}">{{ $order->id }}</a></th>
+                                <!-- <th><a href="{{ route('order.detail', $order->id) }}">{{ $order->id }}</a></th> -->
                                 <td>{{ $order->created_at }}</td>
                                 <td>
                                     @if (count($order->products) == 1)

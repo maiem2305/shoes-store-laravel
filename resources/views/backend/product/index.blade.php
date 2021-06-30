@@ -17,10 +17,10 @@
                 <table id="table" class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">{{ trans('product.id') }}</th>
+                            <!-- <th scope="col">{{ trans('product.id') }}</th> -->
                             <th scope="col">{{ trans('product.name') }}</th>
                             <th scope="col">{{ trans('product.description') }}</th>
-                            <th scope="col">{{ trans('product.gender') }}</th>
+                            <th scope="col">{{ trans('product.category') }}</th>
                             <th scope="col">{{ trans('product.price') }}</th>
                             <th scope="col">{{ trans('product.action') }}</th>
                         </tr>
@@ -28,11 +28,11 @@
                     <tbody>
                         @foreach ($products as $product)
                         <tr>
-                            <th scope="row">{{ $product->id }}</th>
+                            <!-- <th scope="row">{{ $product->id }}</th> -->
                             <td><a href="{{ route('product.show', $product->id) }}">{{ $product->name }}</a></td>
                             <td class="text-left">{{ $product->description }}</td>
                             <td>{{ $product->gender }}</td>
-                            <td>${{ $product->price }}</td>
+                            <td>{{ $product->price }}đ</td>
                             <td>
                                 {{ Form::open(['method' => 'DELETE', 'route' => ['product.destroy', $product->id]]) }}
                                 <div class="btn-group btn-group-toggle">

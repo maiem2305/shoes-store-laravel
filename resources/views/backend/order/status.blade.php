@@ -10,7 +10,7 @@
                     <table id="table" class="table table-hover table-bordered text-center">
                         <thead>
                             <tr>
-                                <th scope="col">{{ trans('order.id') }}</th>
+                                <!-- <th scope="col">{{ trans('order.id') }}</th> -->
                                 <th scope="col">{{ trans('order.user') }}</th>
                                 <th scope="col">{{ trans('order.quantity') }}</th>
                                 <th scope="col">{{ trans('order.total') }}</th>
@@ -21,7 +21,7 @@
                         <tbody>
                             @foreach ($orders as $order)
                             <tr>
-                                <th scope="row">{{ $order->id }}</th>
+                                <!-- <th scope="row">{{ $order->id }}</th> -->
                                 <td>{{ $order->user->email }}</td>
                                 <td>{{ $order->quantity }}</td>
                                 <td>${{ $order->total }}</td>

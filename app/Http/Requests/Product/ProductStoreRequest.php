@@ -23,13 +23,14 @@ class ProductStoreRequest extends FormRequest
      */
     public function rules()
     {
+   
         return [
             'name' => 'required|unique:products|max:255',
             'description' => 'required',
             'gender' => 'required|boolean',
             'price' => 'required',
-            // 'image' => 'required|max:5',
-            // 'image' =>'image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'required|max:5',
+            // 'image.*' =>'image|mimes:jpeg,png,jpg|max:2048',
             'color' => 'required',
             'size' => 'required',
         ];

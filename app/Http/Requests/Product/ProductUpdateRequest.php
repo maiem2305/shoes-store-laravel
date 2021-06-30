@@ -29,7 +29,7 @@ class ProductUpdateRequest extends FormRequest
             'gender' => 'required|boolean',
             'price' => 'required',
             'image' => 'nullable|max:5',
-            'image.*' => 'image|mimes:jpeg,png,jpg|max:2048',
+            // 'image.*' => 'image|mimes:jpeg,png,jpg|max:2048',
             'color' => 'required',
             'size' => 'required',
         ];

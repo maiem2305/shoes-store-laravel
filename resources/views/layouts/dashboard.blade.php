@@ -27,7 +27,8 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-logo">
-                    <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo">
+                    <!-- <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo"> -->
+                    MaiShoes
                 </li>
                 <li>
                     <a href="{{ route('admin.index') }}"><i
@@ -52,10 +53,10 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li>
+                <li>
                     <a href="{{ route('category.create') }}"><i
                             class="fas fa-filter"></i>{{ trans('layouts.category') }}</a>
-                </li> -->
+                </li>
                 <li>
                     <a href="{{ route('review.index') }}"><i class="fas fa-star"></i>{{ trans('layouts.review') }}</a>
                 </li>
