@@ -27,8 +27,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-logo">
-                    <!-- <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo"> -->
-                    MaiShoes
+                    <img src="{{ asset('storage/logo/logo-pink.png') }}" width="150px" height="30px" alt="logo">
                 </li>
                 <li>
                     <a href="{{ route('admin.index') }}"><i

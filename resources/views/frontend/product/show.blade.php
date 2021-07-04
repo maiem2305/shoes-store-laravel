@@ -101,7 +101,7 @@
                 </button>
             </div>
              <div class="col-md-12">
-                <button type="button" class="btn btn-primary" id="wishlist">
+                <button type="button" class="btn btn-primary {{ (Auth::check())?'is_login':'' }}" id="wishlist">
                     <span>favorite</span>
                     <span><i class="far fa-heart"></i></span>
                 </button>
@@ -290,7 +290,7 @@
                     alert('Something went wrong!');
                 }
             });
-        });s
+        });
     });
 </script>
 <!-- Review -->
@@ -342,6 +342,14 @@
         function responseMessage(msg) {
             $('.text-message').html("<span>" + msg + "</span>");
         }
+
+        $('#wishlist').click(function(){
+            if(!$(this).hasClass('is_login')){
+                $('.nav-link').click();
+            }else{
+
+            }
+        });
     });
 </script>
 @endsection

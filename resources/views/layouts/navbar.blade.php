@@ -2,8 +2,7 @@
 <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <!-- <img src="{{ asset('storage/logo/logo-black.png') }}" width="60" height="20" alt="logo"> -->
-            MaiShoes
+            <img src="{{ asset('storage/logo/logo.png') }}" width="170px" height="35px" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
